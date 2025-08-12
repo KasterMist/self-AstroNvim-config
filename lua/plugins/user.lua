@@ -1,8 +1,14 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
 -- Here are some examples:
+
+-- 配置Nerd Font
+-- 主要字体：0xProto Nerd Font Mono
+-- 备选字体：其他Nerd Font
+vim.opt.guifont = "0xProto Nerd Font Mono:h14"
+-- 如果上面的字体不可用，可以尝试以下备选方案：
+-- vim.opt.guifont = "0xProto Nerd Font:h14"
+-- vim.opt.guifont = "0xProto Nerd Font Propo:h14"
 
 ---@type LazySpec
 return {
