@@ -23,7 +23,14 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- setting
+vim.opt.ignorecase = true -- ignore case in search patterns
+vim.opt.smartcase = true -- override ignorecase if search pattern contains uppercase letters
+
+vim.opt.splitbelow = true -- open new horizontal splits below the current window
+vim.opt.splitright = true -- open new vertical splits to the right of the current window
 
 
 require "lazy_setup"
+require "keymapping"
 require "polish"
